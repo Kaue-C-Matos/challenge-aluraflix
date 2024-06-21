@@ -1,0 +1,16 @@
+.cabecalho{
+    display: flex;
+    background-color: #191919;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.linkDestacado{
+    text-decoration: none;
+    color: blue;
+}
