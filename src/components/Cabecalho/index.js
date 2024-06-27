@@ -6,7 +6,7 @@ function Cabecalho(){
     return(
         <header className={styles.cabecalho}>
             <img src='logo.png' alt='Logotipo'/>
-            <div>
+            <div className={styles.navegacao}>
                 <Botao to={"/"}>
                     <NavLink className={({isActive}) =>`
                     ${isActive ? styles.linkDestacado : styles.link}

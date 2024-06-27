@@ -33,7 +33,7 @@ function ModalEditar({isOpen, onRequestClose}){
                     <textarea></textarea>
 
                     <div className={styles.botoes}>
-                        <Botao>Salvar</Botao>
+                        <Botao type="submit">Salvar</Botao>
                         <Botao>Limpar</Botao>
                     </div>
                 </form>

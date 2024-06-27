@@ -1,0 +1,12 @@
+{
+    "videos":[
+        {
+            "id": 1,
+            "titulo": "Quer mergulhar em tecnologia?",
+            "categoria": "Front end",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSokqTb9HfHPeHcCcVtcpeBALNvdXud3CpIIA&s",
+            "video": "https://youtube.com",
+            "descricao": "Aprenda a mergulhar na tecnologia do front end"
+        }
+    ]
+}
