@@ -5,4 +5,13 @@
     display: flex;
     justify-content: center;
     padding: 5px;
+    margin-left: 15px;
+}
+
+.carrosselDiv{
+    cursor: grab;
+}
+
+.inner{
+    display: flex;
 }

@@ -1,17 +1,43 @@
 import Banner from "components/Banner";
 import Card from "components/Card";
 import Carrossel from "components/Carrossel";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 function PaginaInicial(){
+    const [videos, setVideos] = useState([])
+
+    useEffect(()=>{
+        fetch("http://localhost:3000/videos")
+        .then(resposta => resposta.json())
+        .then(dados =>{
+            setVideos(dados)
+        })
+    }, [])
+
+    console.log(videos)
+
     return(
         <section>
             <Banner/>
             <Carrossel sessao="Front end" cor="#6BD1FF">
-                <Card/>
+                {videos
+                .filter((video) => video.categoria === "Front end")
+                .map((video) =>(
+                    <motion.div key={video.id}>
+                        <Card imagem={video.imagem} titulo={video.titulo}/>
+                    </motion.div>
+                ))}
             </Carrossel>
 
             <Carrossel sessao="Back end" cor="#00C86F">
-
+                {videos
+                .filter((video) => video.categoria === "Back end")
+                .map((video) =>(
+                    <motion.div key={video.id}>
+                        <Card imagem={video.imagem} titulo={video.titulo}/>
+                    </motion.div>
+                ))}
             </Carrossel>
 
             <Carrossel sessao="Inovação" cor="#FFBA05">

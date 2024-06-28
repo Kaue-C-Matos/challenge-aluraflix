@@ -4,20 +4,19 @@ import styles from "./Card.module.css"
 import { useState } from "react";
 import ModalEditar from "components/ModalEditar";
 
-function Card(){
+function Card({imagem, titulo}){
     const [modalAberta, setModalAberta] = useState(false)
 
     return(
         <>
         <figure className={styles.card}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSokqTb9HfHPeHcCcVtcpeBALNvdXud3CpIIA&s" alt="imagem linda"/>
+            <img src={imagem} alt={titulo} onDragStart={event => event.preventDefault()}/>
             <figcaption className={styles.opcoes}>
                 <button><TbTrashX/>   Deletar</button>
                 <button onClick={()=>setModalAberta(true)}><PiPencilLineBold/>   Editar</button>
             </figcaption>
         </figure>
-            <ModalEditar isOpen={modalAberta} onRequestClose={()=> setModalAberta(false)}/>
-        
+        <ModalEditar isOpen={modalAberta} onRequestClose={()=> setModalAberta(false)}/>
         </>
     )
 }
