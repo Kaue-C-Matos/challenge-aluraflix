@@ -9,7 +9,7 @@ function Card({imagem, titulo, categoria, video, descricao, id}){
 
     async function deletar(){
         try {
-            await fetch(`http://localhost:3000/videos/${id}`,{
+            await fetch(`https://my-json-server.typicode.com/Kaue-C-Matos/aluraflix-api/${id}`,{
                 method: "DELETE",
                 headers: {
                     "Content-type": "application/json"

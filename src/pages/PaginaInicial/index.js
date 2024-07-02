@@ -8,7 +8,7 @@ function PaginaInicial(){
     const [videos, setVideos] = useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:3000/videos")
+        fetch("https://my-json-server.typicode.com/Kaue-C-Matos/aluraflix-api/videos")
         .then(resposta => resposta.json())
         .then(dados =>{
             setVideos(dados)

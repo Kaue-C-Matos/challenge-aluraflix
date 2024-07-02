@@ -23,7 +23,7 @@ function NovoVideo(){
         e.preventDefault()
 
         try {
-            await fetch("http://localhost:3000/videos", {
+            await fetch("https://my-json-server.typicode.com/Kaue-C-Matos/aluraflix-api", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json"

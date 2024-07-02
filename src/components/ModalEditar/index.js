@@ -34,7 +34,7 @@ function ModalEditar({ isOpen, onRequestClose, id, tituloInicial, categoriaInici
         e.preventDefault()
 
         try {
-            await fetch(`http://localhost:3000/videos/${id}`, {
+            await fetch(`https://my-json-server.typicode.com/Kaue-C-Matos/aluraflix-api/${id}`, {
                 method:"PUT",
                 headers: {
                     "Content-type": "application/json"
