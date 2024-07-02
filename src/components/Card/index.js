@@ -4,19 +4,41 @@ import styles from "./Card.module.css"
 import { useState } from "react";
 import ModalEditar from "components/ModalEditar";
 
-function Card({imagem, titulo}){
+function Card({imagem, titulo, categoria, video, descricao, id}){
     const [modalAberta, setModalAberta] = useState(false)
+
+    async function deletar(){
+        try {
+            await fetch(`http://localhost:3000/videos/${id}`,{
+                method: "DELETE",
+                headers: {
+                    "Content-type": "application/json"
+                }
+            })
+            window.location.reload()
+        } catch (error) {
+            console.error(error)
+        }
+    }
 
     return(
         <>
         <figure className={styles.card}>
             <img src={imagem} alt={titulo} onDragStart={event => event.preventDefault()}/>
             <figcaption className={styles.opcoes}>
-                <button><TbTrashX/>   Deletar</button>
+                <button onClick={()=>deletar()}><TbTrashX/>   Deletar</button>
                 <button onClick={()=>setModalAberta(true)}><PiPencilLineBold/>   Editar</button>
             </figcaption>
         </figure>
-        <ModalEditar isOpen={modalAberta} onRequestClose={()=> setModalAberta(false)}/>
+        <ModalEditar 
+            isOpen={modalAberta} 
+            onRequestClose={()=> setModalAberta(false)}
+            tituloInicial={titulo}
+            categoriaInicial={categoria}
+            imagemInicial={imagem}
+            videoInicial={video}
+            descricaoInicial={descricao}
+            id={id}/>
         </>
     )
 }

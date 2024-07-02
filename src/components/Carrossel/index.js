@@ -8,7 +8,7 @@ function Carrossel({sessao, cor, children}){
 
     useEffect(()=>{
         setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
-    }, [])
+    }, [children])
 
     return(
         <section className={styles.carrossel}>

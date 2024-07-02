@@ -25,7 +25,14 @@ function PaginaInicial(){
                 .filter((video) => video.categoria === "Front end")
                 .map((video) =>(
                     <motion.div key={video.id}>
-                        <Card imagem={video.imagem} titulo={video.titulo}/>
+                        <Card
+                            id={video.id} 
+                            imagem={video.imagem}  
+                            titulo={video.titulo}
+                            categoria={video.categoria}
+                            video={video.video}
+                            descricao={video.descricao}
+                        />
                     </motion.div>
                 ))}
             </Carrossel>
@@ -35,17 +42,50 @@ function PaginaInicial(){
                 .filter((video) => video.categoria === "Back end")
                 .map((video) =>(
                     <motion.div key={video.id}>
-                        <Card imagem={video.imagem} titulo={video.titulo}/>
+                        <Card
+                            id={video.id} 
+                            imagem={video.imagem}  
+                            titulo={video.titulo}
+                            categoria={video.categoria}
+                            video={video.video}
+                            descricao={video.descricao}
+                        />
                     </motion.div>
                 ))}
             </Carrossel>
 
             <Carrossel sessao="Inovação" cor="#FFBA05">
-
+            {videos
+                .filter((video) => video.categoria === "Inovação")
+                .map((video) =>(
+                    <motion.div key={video.id}>
+                        <Card
+                            id={video.id} 
+                            imagem={video.imagem}  
+                            titulo={video.titulo}
+                            categoria={video.categoria}
+                            video={video.video}
+                            descricao={video.descricao}
+                        />
+                    </motion.div>
+                ))}
             </Carrossel>
 
             <Carrossel sessao="Gestão" cor="#B00B69">
-
+            {videos
+                .filter((video) => video.categoria === "Gestão")
+                .map((video) =>(
+                    <motion.div key={video.id}>
+                        <Card
+                            id={video.id} 
+                            imagem={video.imagem}  
+                            titulo={video.titulo}
+                            categoria={video.categoria}
+                            video={video.video}
+                            descricao={video.descricao}
+                        />
+                    </motion.div>
+                ))}
             </Carrossel>
         </section>
     )

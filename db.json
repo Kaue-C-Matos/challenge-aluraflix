@@ -1,29 +1,68 @@
 {
-    "videos":[
-        {
-            "id": 1,
-            "titulo": "Quer mergulhar em tecnologia?",
-            "categoria": "Front end",
-            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSokqTb9HfHPeHcCcVtcpeBALNvdXud3CpIIA&s",
-            "video": "https://youtube.com",
-            "descricao": "Aprenda a mergulhar na tecnologia do front end"
-        },
-        {
-            "id": 2,
-            "titulo": "Escola front-end",
-            "categoria": "Front end",
-            "imagem": "https://www.alura.com.br/assets/img/escola-categorias/sharing/escola-front-end-share.1712930781.jpg",
-            "video": "https://www.alura.com.br/webseries/fronteiras-do-frontend",
-            "descricao": "Desenvolva experiências web incríveis com HTML, CSS e JavaScript, além de se aprofundar nos principais frameworks do mercado, como React, Angular e Vue.JS. Domine JavaScript a fundo, para não depender de copiar e colar."
-        },
-        {
-            "id": 3,
-            "titulo": "JavaScript para back-end | Hipsters.Talks",
-            "categoria": "Back end",
-            "imagem": "https://i.ytimg.com/vi/uyRDbGZG92E/sddefault.jpg?v=618ea707",
-            "video": "https://www.youtube.com/watch?v=uyRDbGZG92E",
-            "descricao": "Nesse episódio do Hipsters.Talks vamos conversar sobre a utilização de JavaScript para back-end e conhecer mais sobre sua aplicação no dia a dia de desenvolvimento."
-        }
-
-    ]
+  "videos": [
+    {
+      "titulo": "Quer mergulhar em tecnologia?",
+      "categoria": "Front end",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSokqTb9HfHPeHcCcVtcpeBALNvdXud3CpIIA&s",
+      "video": "https://youtube.com",
+      "descricao": "Aprenda a mergulhar na tecnologia do front end, ihuu",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "titulo": "Escola front-end",
+      "categoria": "Front end",
+      "imagem": "https://www.alura.com.br/assets/img/escola-categorias/sharing/escola-front-end-share.1712930781.jpg",
+      "video": "https://www.alura.com.br/webseries/fronteiras-do-frontend",
+      "descricao": "Desenvolva experiências web incríveis com HTML, CSS e JavaScript, além de se aprofundar nos principais frameworks do mercado, como React, Angular e Vue.JS. Domine JavaScript a fundo, para não depender de copiar e colar."
+    },
+    {
+      "id": "3",
+      "titulo": "JavaScript para back-end | Hipsters.Talks",
+      "categoria": "Back end",
+      "imagem": "https://i.ytimg.com/vi/uyRDbGZG92E/sddefault.jpg?v=618ea707",
+      "video": "https://www.youtube.com/watch?v=uyRDbGZG92E",
+      "descricao": "Nesse episódio do Hipsters.Talks vamos conversar sobre a utilização de JavaScript para back-end e conhecer mais sobre sua aplicação no dia a dia de desenvolvimento."
+    },
+    {
+      "id": "f741",
+      "titulo": "O que faz uma desenvolvedora Back-end? com Juliana Amoasei",
+      "categoria": "Back end",
+      "imagem": "https://i.ytimg.com/vi/fiPfvylj6rk/sddefault.jpg",
+      "video": "https://www.youtube.com/watch?v=fiPfvylj6rk",
+      "descricao": "Afinal, quem trabalha com Back-end faz o que? Com quais outras áreas da tecnologia essa pessoa acaba se relacionando no dia a dia de trabalho e quais os possíveis caminhos nessa carreira? 🤔"
+    },
+    {
+      "id": "9355",
+      "titulo": "O que faz uma desenvolvedora front-end?",
+      "categoria": "Front end",
+      "imagem": "https://i.ytimg.com/vi/ZY3-MFxVdEw/maxresdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "descricao": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio! "
+    },
+    {
+      "id": "0c52",
+      "titulo": "Como testar seu Front-end? com Mario Souto",
+      "categoria": "Front end",
+      "imagem": "https://i.ytimg.com/vi/CaTbfdsVydE/mqdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=CaTbfdsVydE",
+      "descricao": "Como se desenvolver em Front-End?"
+    },
+    {
+      "id": "1593",
+      "titulo": "https://www.youtube.com/watch?v=rqMf3dZ0J4g",
+      "categoria": "Inovação",
+      "imagem": "https://i.ytimg.com/vi/rqMf3dZ0J4g/sddefault.jpg",
+      "video": "https://www.youtube.com/watch?v=rqMf3dZ0J4g",
+      "descricao": "Diretoria de Ensino - Região de ITU\n"
+    },
+    {
+      "id": "b48f",
+      "titulo": "O que é gestão de carreira?",
+      "categoria": "Gestão",
+      "imagem": "https://i.ytimg.com/vi/unz-EGRNVa0/maxresdefault.jpg",
+      "video": "https://www.youtube.com/watch?v=unz-EGRNVa0",
+      "descricao": "A gestão de carreira vai muito além de investir em conhecimento na área que você trabalha ou quer atuar. Estar qualificado para o mercado envolve diversos fatores e processos. Mas, quais são eles? A Pri Stuani esclarece neste vídeo. "
+    }
+  ]
 }

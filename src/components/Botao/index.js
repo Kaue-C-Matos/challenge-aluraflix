@@ -1,8 +1,8 @@
 import styles from './Botao.module.css'
 
-function Botao({children, type}){
+function Botao({children, type, onClick, onSubmit}){
     return(
-        <button className={styles.botao} type={type = "button"}>
+        <button onSubmit={onSubmit} onClick={onClick} className={styles.botao} type={type}>
             {children}
         </button>
     )
